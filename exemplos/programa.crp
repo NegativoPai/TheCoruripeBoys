@@ -1,0 +1,7 @@
+var sentinela = 0;
+var taxa = 1.5;
+se sentinela >= 10
+  var limite = (sentinela + 1) * 2;
+senao
+  var limite = 0;
+fim
