@@ -1,0 +1,121 @@
+% Arquivo gerado por simulador/tabela_latex.py
+% Nao editar a mao: rode o script de novo depois de mudar algum AFD.
+
+\begin{table}[htb]
+\centering
+\caption{Funcao de transicao do AFD de identificador}
+\label{tab:afd-identificador}
+\begin{tabular}{l|cc}
+\hline
+$\delta$ & \texttt{0--9} & \texttt{A--Z, \_, a--z} \\
+\hline
+$\rightarrow$ $q_{0}$ & $q_{d}$ & $q_{1}$ \\
+$*$ $q_{1}$ & $q_{1}$ & $q_{1}$ \\
+$q_{d}$ & $q_{d}$ & $q_{d}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Funcao de transicao do AFD de inteiro}
+\label{tab:afd-inteiro}
+\begin{tabular}{l|cc}
+\hline
+$\delta$ & \texttt{0} & \texttt{1--9} \\
+\hline
+$\rightarrow$ $q_{0}$ & $q_{1}$ & $q_{2}$ \\
+$*$ $q_{1}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{2}$ & $q_{2}$ & $q_{2}$ \\
+$q_{d}$ & $q_{d}$ & $q_{d}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Funcao de transicao do AFD de float}
+\label{tab:afd-float}
+\begin{tabular}{l|ccc}
+\hline
+$\delta$ & \texttt{.} & \texttt{0} & \texttt{1--9} \\
+\hline
+$\rightarrow$ $q_{0}$ & $q_{d}$ & $q_{1}$ & $q_{2}$ \\
+$q_{1}$ & $q_{3}$ & $q_{d}$ & $q_{d}$ \\
+$q_{2}$ & $q_{3}$ & $q_{2}$ & $q_{2}$ \\
+$q_{3}$ & $q_{d}$ & $q_{4}$ & $q_{4}$ \\
+$*$ $q_{4}$ & $q_{d}$ & $q_{4}$ & $q_{4}$ \\
+$q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Funcao de transicao do AFD de delimitador}
+\label{tab:afd-delimitador}
+\begin{tabular}{l|cccc}
+\hline
+$\delta$ & \texttt{(} & \texttt{)} & \texttt{,} & \texttt{;} \\
+\hline
+$\rightarrow$ $q_{0}$ & $q_{1}$ & $q_{2}$ & $q_{3}$ & $q_{4}$ \\
+$*$ $q_{1}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{2}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{3}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{4}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Funcao de transicao do AFD de operador}
+\label{tab:afd-operador}
+\begin{tabular}{l|ccccccccc}
+\hline
+$\delta$ & \texttt{!} & \texttt{\%} & \texttt{*} & \texttt{+} & \texttt{-} & \texttt{/} & \texttt{\textless{}} & \texttt{=} & \texttt{\textgreater{}} \\
+\hline
+$\rightarrow$ $q_{0}$ & $q_{1}$ & $q_{3}$ & $q_{4}$ & $q_{5}$ & $q_{6}$ & $q_{7}$ & $q_{8}$ & $q_{10}$ & $q_{12}$ \\
+$q_{1}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{2}$ & $q_{d}$ \\
+$*$ $q_{2}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{3}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{4}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{5}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{6}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{7}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{8}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{9}$ & $q_{d}$ \\
+$*$ $q_{9}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{10}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{11}$ & $q_{d}$ \\
+$*$ $q_{11}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{12}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{13}$ & $q_{d}$ \\
+$*$ $q_{13}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Funcao de transicao do AFD de palavra chave}
+\label{tab:afd-palavra-chave}
+\begin{tabular}{l|cccccccccc}
+\hline
+$\delta$ & \texttt{a} & \texttt{e} & \texttt{f} & \texttt{i} & \texttt{m} & \texttt{n} & \texttt{o} & \texttt{r} & \texttt{s} & \texttt{v} \\
+\hline
+$\rightarrow$ $q_{0}$ & $q_{d}$ & $q_{d}$ & $q_{1}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{4}$ & $q_{9}$ \\
+$q_{1}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{2}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$q_{2}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{3}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{3}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$q_{4}$ & $q_{d}$ & $q_{5}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{5}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{6}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$q_{6}$ & $q_{7}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$q_{7}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{8}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{8}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$q_{9}$ & $q_{10}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$q_{10}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{11}$ & $q_{d}$ & $q_{d}$ \\
+$*$ $q_{11}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+$q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ & $q_{d}$ \\
+\hline
+\end{tabular}
+\end{table}
