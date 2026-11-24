@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# LaTeX - arquivos intermediarios de compilacao
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.run.xml
+
+# LaTeX - especificos do beamer
+*.nav
+*.snm
+*.vrb
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
